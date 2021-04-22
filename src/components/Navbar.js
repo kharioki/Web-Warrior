@@ -3,15 +3,14 @@ import React from 'react'
 
 export default function Navbar() {
     const data = useStaticQuery(graphql`
-    query SiteInfo {
-        site {
-            siteMetadata {
-                title
+        query SiteInfo {
+            site {
+                siteMetadata {
+                    title
+                }
             }
         }
-    }
     `);
-    console.log({data});
 
     const { title } = data.site.siteMetadata;
 
