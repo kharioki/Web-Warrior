@@ -39,6 +39,7 @@ export const query = graphql`
             frontmatter {
                 title
                 stack
+                slug
                 thumb {
                     childImageSharp {
                         fluid {
